@@ -17,5 +17,8 @@ end
 #Now, we create a object for call the class
 
 g = Anfitriao.new("Maria")
+
+#Object created... now we call the methods
+
 g.say_hello
 g.say_bye
