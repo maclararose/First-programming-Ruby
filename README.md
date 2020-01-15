@@ -12,3 +12,4 @@ Commands that I learned at the moment:
     - class
     - method = def
     - instance variable = @nameVariable
+    - attr_accessor
