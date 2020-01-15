@@ -2,6 +2,7 @@
 Repository of firts projects in Ruby. Beginner.
 I want to learn Ruby and work whit her. So... I go to make any programs simple, knowing each feature.
 If you want read my codes, don't worry! I will comment them for a better understanding.
+I am try to write everthing  in english.
 
 Commands that I learned at the moment:
 - Output:
@@ -12,3 +13,4 @@ Commands that I learned at the moment:
     - class
     - method = def
     - instance variable = @nameVariable
+    - attr_accessor
