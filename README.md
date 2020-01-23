@@ -14,7 +14,7 @@ Commands that I learned at the moment:
     - method = def
     - instance variable = @nameVariable
     - attr_accessor
-- Mnipulation strings:
+- Manipulation strings:
     - gets.chomp!
     - variable.to_i
     - variable.upcase
