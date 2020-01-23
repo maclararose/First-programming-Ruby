@@ -63,8 +63,6 @@ while play
         play = true
     elsif answer == "n"
         play = false
-    else
-        puts "Puts... deu ruim"
     end
 
     puts "You managed to hit #{i} attempts"
