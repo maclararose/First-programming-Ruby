@@ -2,51 +2,72 @@
 # It is made with Ruby and I use the basic commands
 # Inputs, outputs, random numbers and than others things
 # For pratice
-class MorL
-    def initialize (name = "")
-        puts "Well come to the more or less game"
-        puts "What is your name?"
-        @name = gets # gets is a simple command of input
-    end
-    puts "\n\n" # skip to the line
 
-    def chossing
-        puts "We going to start the game for you, #{name}" # uses the name the user entered
+play = true
 
-        puts "Choosing a number between 0 and 200..."
-        puts "\n\n"
+puts "Well come to the more or less game"
+puts "What is your name?"
+name = gets # gets is a simple command of input (STRING)
 
-        secret_number = range 0..200
-        puts "Chosen... Try to guess"
-    end    
-    
+puts "\n\n" # skip to the line
+   
+puts "We going to start the game for you, #{name}" # uses the name the user entered
 
+while play
+    puts "Choosing a number between 0 and 200..."
     puts "\n\n"
 
-    def trying(i, number)
-        @i = 0
-        puts "Tentativa #{@i}"
+    secret_number = rand 0..200
+    puts "Chosen... Try to guess"   
+        
+    puts "\n\n"
 
-        i++
+    i = 0
+    puts "Tentativa #{i}"
+    i += 1
 
-        puts "Choose a number..."
-        number = gets
+    puts "Choose a number..."
+    number = gets
 
-        puts "Will it be if you got it right? You choose #{number}"
+    puts "Will it be  you got it right? You choose #{number}"
 
-        puts "\n"
+    puts "\n"
 
-        if number.to_i == secret_number
-            puts "You got it"
-        else
-            puts "You missed... The number choosen is #{secret_number}"
-            puts "Try again? [Y/N]"
-            choose1 = gets.toUpper
-
-            if choose1 == "Y"
-                trying
-            elsif choose1 == "N"
-                outputs
-            end
+    while number != secret_number
+        if number.to_i > secret_number
+            puts "Less..."
+            puts "Try again..."
+    
+            number = gets
+            i+=1
         end
+        if number.to_i < secret_number
+            puts "More..."
+            puts "Try again"
+    
+            number = gets
+            i+=1
+        else
+            break
+        end
+    end
+
+
+
+    puts "You got it!"
+
+    puts "Would you like to play again?[Y/N]"
+    answer = gets.chomp!
+
+    if answer == "y"
+        play = true
+    elsif answer == "n"
+        play = false
+    else
+        puts "Puts... deu ruim"
+    end
+
+    puts "You managed to hit #{i} attempts"
 end
+
+puts "~~~~Goodbye~~~~"
