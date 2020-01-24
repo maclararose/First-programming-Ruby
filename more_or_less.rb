@@ -1,7 +1,8 @@
-# This is a little guessing game
-# It is made with Ruby and I use the basic commands
-# Inputs, outputs, random numbers and than others things
-# For pratice
+=begin This is a little guessing game
+ It is made with Ruby and I use the basic commands
+ Inputs, outputs, random numbers and than others things
+ For pratice 
+=end
 
 play = true
 
@@ -23,7 +24,7 @@ while play
     puts "\n\n"
 
     i = 0
-    puts "Tentativa #{i}"
+    puts "Attempt #{i}"
     i += 1
 
     puts "Choose a number..."
