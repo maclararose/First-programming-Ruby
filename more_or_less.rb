@@ -6,7 +6,7 @@
 
 play = true
 
-puts "Well come to the more or less game"
+puts "Wellcome to the more or less game"
 puts "What is your name?"
 name = gets # gets is a simple command of input (STRING)
 
@@ -19,7 +19,7 @@ while play
     puts "\n\n"
 
     secret_number = rand 0..200
-    puts "Chosen... Try to guess"   
+    puts "Chosen... Try to guess"
         
     puts "\n\n"
 
