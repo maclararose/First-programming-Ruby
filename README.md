@@ -14,9 +14,12 @@ Commands that I learned at the moment:
     - method = def
     - instance variable = @nameVariable
     - attr_accessor
+<<<<<<< HEAD
 - Loops:
     - while
     - case .. when
+=======
+>>>>>>> a0223aa2ddf4ee7442554bd1ece44f1ab8a11788
 - Manipulation strings:
     - gets.chomp!
     - variable.to_i
