@@ -17,3 +17,8 @@ Commands that I learned at the moment:
 - Loops:
     - while
     - case .. when
+- Manipulation strings:
+    - gets.chomp!
+    - variable.to_i
+    - variable.upcase
+    - variable.downcase
